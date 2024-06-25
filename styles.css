@@ -1,1 +1,85 @@
+/* styles.css */
 
+/* Apply basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the container that holds the to-do list */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style the main heading */
+h1 {
+    margin: 0 0 20px;
+}
+
+/* Style the input group containing the input field and button */
+.input-group {
+    display: flex;
+}
+
+/* Style the input field */
+#todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style the add to-do button */
+#addTodoButton {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Change the button color on hover */
+#addTodoButton:hover {
+    background-color: #218838;
+}
+
+/* Style the unordered list containing to-do items */
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+/* Style each to-do list item */
+#todoList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+/* Change the background color of a list item on hover */
+#todoList li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for crossed-out list items */
+.crossed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
